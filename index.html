@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UraniumNote</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h style="padding-left: 2%;"><b>How to use the app</b></h><br>
+      <h style="padding-left: 2%;">Create a new note and move it to planned notes, by pressing the <b>New</b> button and <b>Move to Planned</b> button at the bottom.</h><br>
+      <h style="padding-left: 2%;">Once you are ready to do the task click on the note in <b>Planned</b> and click <b>Move to Current</b>.</h><br>
+      <h style="padding-left: 2%;">Once you have finished the task, you can move it to the <b>Done</b> list by clicking <b>Move to Done</b>.</h><br>
+      <h style="padding-left: 2%;">To remove a note use the <b>Delete/Clear</b> button.</h><br>
+      <h style="padding-left: 2%;">To edit a note just click on the note you want to edit and click on <b>To Editor</b> where you can edit your note. Then click the appropriate Move button once you are done editing.</h><br><br>
+      <aside class='topNav nav-blue'>
+      <div class='container navBar'>
+      <button style="float:center; text-align:center;" onclick="scrollDown()" id="btn-mvtoeditor">To Editor</button>
+      </div>
+      </aside>
+      <div class="headers">
+        <div id="list-head">
+          <b>Planned</b>
+        </div>
+        <div id="list-head">
+          <b>Current (click to edit/delete)</b>
+        </div>
+        <div id="list-head">
+          <b>Done</b>
+        </div>
+      </div>
+      <noteList>
+        <div id='listed2'>
+        </div>
+      </noteList>
+      <noteList>
+        <div id='listed'>
+        </div>
+      </noteList>
+      <noteList>
+        <div id='listed1'>
+        </div>
+      </noteList>
+      <span id="edit-mode" class="no-display">
+      </span>
+      <br>
+      <aside class='topNav nav-blue' id='topNav'>
+        <div class='container navBar'>
+          <div id='color-select'>
+            <div class='color-box white'></div>
+            <div class='color-box aqua'></div>
+            <div class='color-box ice'></div>
+            <div class='color-box sky'></div>
+          </div>
+        </div>
+      </aside>
+      <notepad>
+        <div id="note-title">
+          <input id="title-field" type="text" placeholder="title your note">
+        </div>
+        <div id="note-body">
+          <textarea id="body-field"></textarea>
+        </div>
+      </notepad>
+    </main>
+    <aside class='topNav nav-blue' id='topNav'>
+    <footer>
+      <button onclick="scrollUp()" id="btn-rtrntnts">Return to notes</button>
+      <button onclick="scrollUp()" id="btn-save2">Move to Planned</button>
+      <button onclick="scrollUp()" id="btn-save">Move to Current</button>
+      <button onclick="scrollUp()" id="btn-save1">Move to Done</button>
+      <button id="btn-new">New</button>
+      <button id="btn-delete">Delete / Clear</button>
+      <br>
+    </footer>
+  </aside>
+  </body>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script type='text/javascript' src='js/app.js'></script>
+  <script>
+    function scrollUp() {
+      window.scrollBy(0, -800);
+    }
+    function scrollDown() {
+      window.scrollBy(0, 1000);
+    }
+</script>
+</html>
