@@ -37,9 +37,9 @@ footer {
 noteList {
   margin-top: 20px;
   display: inline-block;
-  margin-left: 1.5%;
+  margin-left: 1%;
   margin-right: 1%;
-  width: 30.5%;
+  width: 30%;
   height: 700px;
   overflow: scroll;
   border: solid 3px #929292;
@@ -175,7 +175,7 @@ notePad {
 button {
   margin: 5px;
   border: solid 3px black;
-  font-size: 22px;
+  font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
   color: #DEDEDE;
